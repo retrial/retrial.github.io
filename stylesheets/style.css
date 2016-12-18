@@ -1,0 +1,142 @@
+header {
+		background: linear-gradient(#232323, #454444, #232323);
+}
+
+#mainmenu {
+	list-style: none;
+	padding: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	margin-top: 25px;
+	border: 2px solid #555555;
+ 	border-radius: 4px;
+}
+
+#mainbloc {
+	margin: 0 auto;
+}
+
+.el {
+	display: inline-block;
+}
+ #maina1 {
+ 	text-decoration: none;
+ 	display: block;
+ 	padding: 10px;
+ 	position: relative;
+/* 	border: 2px solid #555555;
+ 	border-radius: 4px;*/
+ }
+
+/*  #maina1:after {
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 2px;
+	background: #555555;
+	border-radius: 50%;
+	top: 5px;
+	right: -5px;
+ }*/
+
+/*  #maina1:before {
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 2px;
+	background: #555555;
+	border-radius: 50%;
+	top: 5px;
+	left: -2px;
+ }*/
+
+  #maina2 {
+ 	text-decoration: none;
+ 	display: block;
+ 	padding: 10px;
+ 	position: relative;
+/* 	border: 2px solid #555555;
+ 	border-radius: 4px;*/
+ }
+
+/*  #maina2:after {
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 2px;
+	background: #555555;
+	border-radius: 50%;
+	top: 5px;
+	right: -5px;
+ }*/
+
+  #maina3 {
+ 	text-decoration: none;
+ 	display: block;
+ 	padding: 10px;
+ 	position: relative;
+/* 	border: 2px solid #555555;
+ 	border-radius: 4px;*/
+ }
+
+/*  #maina3:after {
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 2px;
+	background: #555555;
+	border-radius: 50%;
+	top: 5px;
+	right: -5px;
+ }*/
+
+  #maina4 {
+ 	text-decoration: none;
+ 	display: block;
+ 	padding: 10px;
+ 	position: relative;
+/* 	border: 2px solid #555555;
+ 	border-radius: 4px;*/
+ }
+
+/*  #maina4:after {
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 2px;
+	background: #555555;
+	border-radius: 50%;
+	top: 5px;
+	right: -5px;
+ }*/
+
+  #maina5 {
+ 	text-decoration: none;
+ 	display: block;
+ 	padding: 10px;
+ 	position: relative;
+/* 	border: 2px solid #555555;
+ 	border-radius: 4px;
+*/ }
+
+/*  #maina5:after {
+	content: "";
+	position: absolute;
+	height: 30px;
+	width: 2px;
+	background: #555555;
+	border-radius: 50%;
+	top: 5px;
+	right: -2px;
+ }*/
+
+ #logotype {
+ 	width: 90px;
+ 	border-radius: 50%;
+ }
+
+ @media screen and (max-width: 1200px) {
+	#mainmenu {
+		margin-top: 3px;
+	}
+}
