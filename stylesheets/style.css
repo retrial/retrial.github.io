@@ -1,5 +1,15 @@
+body {
+	background: radial-gradient(#454444, #232323) no-repeat;
+}
+
 header {
-		background: linear-gradient(#232323, #454444, #232323);
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+footer {
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #mainmenu {
@@ -24,111 +34,35 @@ header {
  	display: block;
  	padding: 10px;
  	position: relative;
-/* 	border: 2px solid #555555;
- 	border-radius: 4px;*/
  }
-
-/*  #maina1:after {
-	content: "";
-	position: absolute;
-	height: 30px;
-	width: 2px;
-	background: #555555;
-	border-radius: 50%;
-	top: 5px;
-	right: -5px;
- }*/
-
-/*  #maina1:before {
-	content: "";
-	position: absolute;
-	height: 30px;
-	width: 2px;
-	background: #555555;
-	border-radius: 50%;
-	top: 5px;
-	left: -2px;
- }*/
 
   #maina2 {
  	text-decoration: none;
  	display: block;
  	padding: 10px;
  	position: relative;
-/* 	border: 2px solid #555555;
- 	border-radius: 4px;*/
  }
-
-/*  #maina2:after {
-	content: "";
-	position: absolute;
-	height: 30px;
-	width: 2px;
-	background: #555555;
-	border-radius: 50%;
-	top: 5px;
-	right: -5px;
- }*/
 
   #maina3 {
  	text-decoration: none;
  	display: block;
  	padding: 10px;
  	position: relative;
-/* 	border: 2px solid #555555;
- 	border-radius: 4px;*/
  }
-
-/*  #maina3:after {
-	content: "";
-	position: absolute;
-	height: 30px;
-	width: 2px;
-	background: #555555;
-	border-radius: 50%;
-	top: 5px;
-	right: -5px;
- }*/
 
   #maina4 {
  	text-decoration: none;
  	display: block;
  	padding: 10px;
  	position: relative;
-/* 	border: 2px solid #555555;
- 	border-radius: 4px;*/
  }
-
-/*  #maina4:after {
-	content: "";
-	position: absolute;
-	height: 30px;
-	width: 2px;
-	background: #555555;
-	border-radius: 50%;
-	top: 5px;
-	right: -5px;
- }*/
 
   #maina5 {
  	text-decoration: none;
  	display: block;
  	padding: 10px;
  	position: relative;
-/* 	border: 2px solid #555555;
- 	border-radius: 4px;
-*/ }
-
-/*  #maina5:after {
-	content: "";
-	position: absolute;
-	height: 30px;
-	width: 2px;
-	background: #555555;
-	border-radius: 50%;
-	top: 5px;
-	right: -2px;
- }*/
+ }
 
  #logotype {
  	width: 90px;
@@ -139,4 +73,38 @@ header {
 	#mainmenu {
 		margin-top: 3px;
 	}
+}
+
+#tovk {
+	width: 50px;
+	height: 50px;
+	border-radius: 40%;
+	background: url(../../image/vk.png);
+	background-size: 100% 100%; 
+	display: block;
+}
+
+#togithub {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: url(../../image/github.png) -5px -5px;
+	background-size: 120% 120%;
+	display: block;
+}
+
+.vk{
+	display: inline-block;
+}
+
+.github {
+	display: inline-block;
+}
+
+#footbloc {
+	margin: 0 auto;
+}
+
+#socialcontainer {
+	text-align: center;
 }
