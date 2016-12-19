@@ -121,7 +121,7 @@ main {
 #htmlmenu {
 	list-style: none;
 	padding: 0px;
-	max-width: 170px;
+	max-width: 160px;
 	margin: 0px;
 	border: 2px solid #555555;
  	border-radius: 4px;
@@ -135,4 +135,32 @@ main {
 
 .htmlli:hover {
 	color: #23527c;
+}
+
+#htmlcontent {
+	border: 2px solid #555555;
+ 	border-radius: 4px;
+}
+
+#boximg {
+	width: 300px;
+	height: 200px;
+}
+
+#post1img {
+	float: left;
+	padding: 5px;
+}
+
+#post1text {
+	float: left;
+	color: #969595;
+}
+
+h4 {
+	text-align: center;
+}
+
+.linktosite {
+	text-decoration: none !important;
 }
