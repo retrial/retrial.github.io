@@ -1,5 +1,6 @@
 body {
 	background: radial-gradient(#454444, #232323) no-repeat;
+	min-height: 800px;
 }
 
 header {
@@ -140,6 +141,7 @@ main {
 #htmlcontent {
 	border: 2px solid #555555;
  	border-radius: 4px;
+ 	display: none;
 }
 
 #boximg {

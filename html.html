@@ -31,7 +31,7 @@
 			<div id="maincontainer" class="container row">
 				<div id="htmlmenucontainer" class="col-sm-4 col-xs-6 row">
 					<ul id="htmlmenu">
-						<li class="htmlli">Генераторы</li>
+						<li id="generationbutton" class="htmlli">Генераторы</li>
 						<li class="htmlli">Полезные Статьи</li>
 						<li class="htmlli">CSS Трюки</li>
 						<li class="htmlli">Видеоуроки</li>
@@ -39,28 +39,7 @@
 						<li class="htmlli">Примеры кода</li>
 					</ul>
 				</div>
-				<div id="htmlcontent" class="col-sm-8 row">
-					<div id="post2" class="row">
-						<div id="post1img" class="col-sm-5"><img src="image/gen2.png" id="boximg"></div>
-						<div id="post1text" class="col-sm-7">
-							<h4>Универсальный генератор CSS</h4>
-							<div class="text">
-							<p>Генеатор подходит для всех популярных свойств в CSS, но немного страдает визуальное оформление.</p>
-							<p><a class="linktosite" href="http://css3generator.com/">Перейти к источнику...</a></p>
-							</div>
-						</div>
-					</div>
-					<div id="post1" class="row">
-						<div id="post1img" class="col-sm-5"><img src="image/gen1.png" id="boximg"></div>
-						<div id="post1text" class="col-sm-7">
-							<h4>Генератор box-shadow</h4>
-							<div class="text">
-							<p>Очень хороший и простой в использовании генератор теней.</p>
-							<p><a class="linktosite" href="http://shpargalkablog.ru/2011/06/css-box-shadow.html">Перейти к источнику...</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
+				<div id="htmlcontent" class="col-sm-8 row"></div>
 			</div>
 		</div>
 	</main>
@@ -74,5 +53,35 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+		var htmlContent = document.getElementById('htmlcontent'),
+			generationContent = document.getElementById('generationbutton'),
+			pattGen = '<div id="post2" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/gen2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Универсальный генератор CSS</h4>' +
+							'<div class="text">' +
+							'<p>Генеатор подходит для всех популярных свойств в CSS, но немного страдает визуальное оформление.</p>' +
+							'<p><a class="linktosite" href="http://css3generator.com/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/gen1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Генератор box-shadow</h4>' +
+							'<div class="text">' +
+							'<p>Очень хороший и простой в использовании генератор теней.</p>' +
+							'<p><a class="linktosite" href="http://shpargalkablog.ru/2011/06/css-box-shadow.html">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function generation() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = '';
+			htmlContent.innerHTML = pattGen;
+		}
+		generationContent.addEventListener('click', generation);
+	</script>
 </body>
 </html>
