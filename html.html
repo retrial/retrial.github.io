@@ -32,8 +32,9 @@
 				<div id="htmlmenucontainer" class="col-sm-4 col-xs-6 row">
 					<ul id="htmlmenu">
 						<li id="generationbutton" class="htmlli">Генераторы</li>
-						<li class="htmlli">Полезные Статьи</li>
-						<li class="htmlli">CSS Трюки</li>
+						<li id="sovetbutton" class="htmlli">Полезные Статьи</li>
+						<li id="linkbutton" class="htmlli">Полезные Ссылки</li>
+						<li id="tricsbutton" class="htmlli">CSS Трюки</li>
 						<li class="htmlli">Видеоуроки</li>
 						<li class="htmlli">Фреймверки</li>
 						<li class="htmlli">Примеры кода</li>
@@ -56,7 +57,17 @@
 	<script>
 		var htmlContent = document.getElementById('htmlcontent'),
 			generationContent = document.getElementById('generationbutton'),
-			pattGen = '<div id="post2" class="row">' +
+			pattGen = '<div id="post3" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/gen3.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Css Фильтры</h4>' +
+							'<div class="text">' +
+							'<p>Css фильтры. Еще не понял зачем они но штука прикольная.</p>' +
+							'<p><a class="linktosite" href="http://html5-demos.appspot.com/static/css/filters/index.html">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post2" class="row">' +
 						'<div id="post1img" class="col-sm-5"><img src="image/gen2.png" id="boximg"></div>' +
 						'<div id="post1text" class="col-sm-7">' +
 							'<h4>Универсальный генератор CSS</h4>' +
@@ -67,6 +78,16 @@
 						'</div>' +
 					'</div>' +
 					'<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/gen4.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Генератор шрифтов</h4>' +
+							'<div class="text">' +
+							'<p>Популярный генератор шрифтов. Из минусов можно сказать, что не все шрифты бесплатные.</p>' +
+							'<p><a class="linktosite" href="https://www.fontsquirrel.com/tools/webfont-generator">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post" class="row">' +
 						'<div id="post1img" class="col-sm-5"><img src="image/gen1.png" id="boximg"></div>' +
 						'<div id="post1text" class="col-sm-7">' +
 							'<h4>Генератор box-shadow</h4>' +
@@ -78,10 +99,163 @@
 					'</div>';
 		function generation() {
 			htmlContent.style.cssText = 'display: block;';
-			htmlContent.innerHTML = '';
 			htmlContent.innerHTML = pattGen;
 		}
 		generationContent.addEventListener('click', generation);
+
+		sovetContent = document.getElementById('sovetbutton'),
+		pattSovet = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/sovet1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Кнопка вверх для сайта</h4>' +
+							'<div class="text">' +
+							'<p>Кнопка вверх, которая возвращает сайт в начало, если он проскролен вниз.</p>' +
+							'<p><a class="linktosite" href="http://webmastermix.ru/raznoe/300-knopka-vverkh-dlya-saita.html">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post2" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/sovet2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Руководство по Flex-box</h4>' +
+							'<div class="text">' +
+							'<p>Полное руководствопо Flex-box</p>' +
+							'<p><a class="linktosite" href="http://frontender.info/a-guide-to-flexbox/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+
+		function sovet() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattSovet;
+		}
+		sovetContent.addEventListener('click', sovet);
+
+		linkContent = document.getElementById('linkbutton'),
+		pattLink = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/link1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Валидатор кода</h4>' +
+							'<div class="text">' +
+							'<p>Самая главная ссылка =) проверяет код на валидность.</p>' +
+							'<p><a class="linktosite" href="https://validator.w3.org/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post2" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/link3.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Can i use</h4>' +
+							'<div class="text">' +
+							'<p>Показывает поддержку свойств/методов в разных браузерах.</p>' +
+							'<p><a class="linktosite" href="http://caniuse.com/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post3" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/link4.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Безопасные веб шрифты</h4>' +
+							'<div class="text">' +
+							'<p>Показывает какие шрифты можно использовать без дополнительных пакетов.</p>' +
+							'<p><a class="linktosite" href="http://www.wearymax.ru/webmasters/fonts/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post4" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/link5.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Гугл шрифты</h4>' +
+							'<div class="text">' +
+							'<p>Магазин шрифтов гугл.</p>' +
+							'<p><a class="linktosite" href="https://fonts.google.com/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post5" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/link6.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Page Speed</h4>' +
+							'<div class="text">' +
+							'<p>Проверяет на скорость вашу страницу.</p>' +
+							'<p><a class="linktosite" href="https://developers.google.com/speed/pagespeed/insights/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post6" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/link7.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Bootstrap GLYPHICONS</h4>' +
+							'<div class="text">' +
+							'<p>Глификонки для бутстрапа.</p>' +
+							'<p><a class="linktosite" href="http://glyphicons.bootstrapcheatsheets.com/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post7" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/link8.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Font ICONS</h4>' +
+							'<div class="text">' +
+							'<p>Иконки на все случаи жизни.</p>' +
+							'<p><a class="linktosite" href="http://fontawesome.io/icons/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post8" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/link9.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Микроразметка</h4>' +
+							'<div class="text">' +
+							'<p>Микроразметка для страниц.</p>' +
+							'<p><a class="linktosite" href="http://schema.org/docs/schemas.html">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/link2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Css reset</h4>' +
+							'<div class="text">' +
+							'<p>Css reset.(Тру пацаны его не юзают).</p>' +
+							'<p><a class="linktosite" href="http://meyerweb.com/eric/tools/css/reset/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+
+		function link() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattLink;
+		}
+		linkContent.addEventListener('click', link);
+
+		tricsContent = document.getElementById('tricsbutton'),
+		pattTrics = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/trics1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Геометрические фигуры css</h4>' +
+							'<div class="text">' +
+							'<p>Создание разных геометрических фигур с помощью css.</p>' +
+							'<p><a class="linktosite" href="https://css-tricks.com/examples/ShapesOfCSS/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post2" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/trics2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Css Тени</h4>' +
+							'<div class="text">' +
+							'<p>Создание очень красвых теней (box-shadow) для элементов.</p>' +
+							'<p><a class="linktosite" href="http://mainview.ru/programming/css/realistichnye-teni-pri-pomoshhi-css3-bez-ispolzovaniya-izobrazhenij">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+
+		function trics() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattTrics;
+		}
+		tricsContent.addEventListener('click', trics);
 	</script>
 </body>
 </html>
