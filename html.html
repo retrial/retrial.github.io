@@ -35,12 +35,12 @@
 						<li id="sovetbutton" class="htmlli">Полезные Статьи</li>
 						<li id="linkbutton" class="htmlli">Полезные Ссылки</li>
 						<li id="tricsbutton" class="htmlli">CSS Трюки</li>
-						<li class="htmlli">Видеоуроки</li>
+						<li id="videobutton" class="htmlli">Видеоуроки</li>
 						<li class="htmlli">Фреймверки</li>
 						<li class="htmlli">Примеры кода</li>
 					</ul>
 				</div>
-				<div id="htmlcontent" class="col-sm-8 row"></div>
+				<div id="htmlcontent" class="col-sm-8 col-xs-12 row"></div>
 			</div>
 		</div>
 	</main>
@@ -212,6 +212,16 @@
 							'</div>' +
 						'</div>' +
 					'</div>' +
+					'<div id="post9" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/link10.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Генеатор градиентных фонов</h4>' +
+							'<div class="text">' +
+							'<p>Колеекция градиентных фонов.</p>' +
+							'<p><a class="linktosite" href="http://evankarageorgos.github.io/hue/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
 					'<div id="post" class="row">' +
 						'<div id="post1img" class="col-sm-5"><img src="image/link2.png" id="boximg"></div>' +
 						'<div id="post1text" class="col-sm-7">' +
@@ -256,6 +266,94 @@
 			htmlContent.innerHTML = pattTrics;
 		}
 		tricsContent.addEventListener('click', trics);
+
+		videoContent = document.getElementById('videobutton'),
+		pattVideo = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/video1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Верстка сайта</h4>' +
+							'<div class="text">' +
+							'<p>Верстка бизнес сайта.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=qh0AZRaogzU&list=PLyf8LgkO_8q84nQqB4K4zFSBUJz7JIgti">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post2" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/video2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Верстка писем</h4>' +
+							'<div class="text">' +
+							'<p>Верстка email-рассылок.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=BjB5x6qq-dc&list=PLhSMKtAqXupFQwflbDyv41V1n5DZE4AtO">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post3" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/video3.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Серия уроков по верстке</h4>' +
+							'<div class="text">' +
+							'<p>Серия уроков по верстке макетов, обучение по плагинам, флексам и многое другое.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=hV6_BH97B0g&list=PL3Un40ig18sdRhlnBRUzQ5Mr1K9mDx0O1&index=1">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post4" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/video4.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Адаптивная верстка</h4>' +
+							'<div class="text">' +
+							'<p>Серия уроков по адаптивной верстке макетов.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=h1i0d8JxreQ&list=PLcVuGt1dXgc3O7hZoUS3EgdLO70N2-Hbu">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post5" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/video5.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Джедай верстки 6</h4>' +
+							'<div class="text">' +
+							'<p>Серия уроков по верстке макетов, вертка юр.сайта.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=oIPzjkICd5M&list=PLyf8LgkO_8q-XITLnsRuUcB5ql9DnuHPV">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post6" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/video6.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Веб совет</h4>' +
+							'<div class="text">' +
+							'<p>Очень хорошие уроки по html, css плюшкам.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/playlist?list=PLrZ_k975yGUwSLpb1zoxRGWDkIoMY4a_R">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post7" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/video7.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Игра на html</h4>' +
+							'<div class="text">' +
+							'<p>Пишем игру на html5.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=Z1CWojNd2yc&list=PLczcTSDLfwNRmy4ab1HEA4vsNIyJfQmsS">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post8" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/video8.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Верстка Bootstrap 3</h4>' +
+							'<div class="text">' +
+							'<p>Верстка на бутстрапе 3.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=Ul5942OxnRw&list=PLcVuGt1dXgc3e9nvSh3PEDYsawkDWEI3o">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+
+		function video() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattVideo;
+		}
+		videoContent.addEventListener('click', video);
 	</script>
 </body>
 </html>
