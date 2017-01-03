@@ -31,17 +31,15 @@
 			<div id="maincontainer" class="container row">
 				<div id="htmlmenucontainer" class="col-sm-4 col-xs-6 row">
 					<ul id="htmlmenu">
-						<li class="htmlli">Теория</li>
+						<li id="jsteorybutton" class="htmlli">Теория</li>
 						<li class="htmlli">Полезные Статьи</li>
-						<li class="htmlli">Задачи</li>
-						<li class="htmlli">Видеоуроки</li>
-						<li class="htmlli">Фреймверки</li>
+						<li id="jsquestbutton" class="htmlli">Задачи</li>
+						<li id="jsvideobutton" class="htmlli">Видеоуроки</li>
+						<li id="jsframebutton" class="htmlli">Фреймверки</li>
 						<li class="htmlli">Примеры кода</li>
 					</ul>
 				</div>
-				<div id="htmlcontent" class="col-sm-8 row">
-					
-				</div>
+				<div id="htmlcontent" class="col-sm-8 col-xs-12 row"></div>
 			</div>
 		</div>
 	</main>
@@ -55,5 +53,113 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+			var htmlContent = document.getElementById('htmlcontent'),
+			jsteoryContent = document.getElementById('jsteorybutton'),
+			pattJsteory = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/jsteory1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Learn JavaScript</h4>' +
+							'<div class="text">' +
+							'<p>Учебник по js от Ильи Кантера.</p>' +
+							'<p><a class="linktosite" href="https://learn.javascript.ru/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post2" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/jsteory2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>JQuery для начинающих</h4>' +
+							'<div class="text">' +
+							'<p>Учебник по jquery от Антона Шевчука.</p>' +
+							'<p><a class="linktosite" href="http://anton.shevchuk.name/jquery-book/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post3" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/jsteory3.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Клиентский JavaScript</h4>' +
+							'<div class="text">' +
+							'<p>Справичник по обьектам, методам и свойствам js.</p>' +
+							'<p><a class="linktosite" href="https://gitcode.ru/manuals/javascript">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function jsteory() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJsteory;
+		}
+		jsteoryContent.addEventListener('click', jsteory);
+
+		jsquestContent = document.getElementById('jsquestbutton'),
+			pattJsquest = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/jsquest1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Задачи по js</h4>' +
+							'<div class="text">' +
+							'<p>Задачи по js из книги "Выразительный JavaScript".</p>' +
+							'<p><a class="linktosite" href="http://www.itmathrepetitor.ru/zadachi-po-javascript-iz-knigi-vyrazitelnyjj-javascript/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>';
+		function jsquest() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJsquest;
+		}
+		jsquestContent.addEventListener('click', jsquest);
+
+		jsframeContent = document.getElementById('jsframebutton'),
+			pattJsframe = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/jsframe1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>JQuery</h4>' +
+							'<div class="text">' +
+							'<p>Самый популярный фреймверк по js.</p>' +
+							'<p><a class="linktosite" href="https://jquery.com/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>';
+		function jsframe() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJsframe;
+		}
+		jsframeContent.addEventListener('click', jsframe);
+
+		jsvideoContent = document.getElementById('jsvideobutton'),
+			pattJsvideo = '<div id="post2" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/jsvideo2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>JavaScript практика</h4>' +
+							'<div class="text">' +
+							'<p>Серия уроков по JavaScript для новичков.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=JISFx18J7nc&list=PLVfMKQXDAhGW0p_BEEe47UkCgNoS_dyki">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+						'<div id="post1" class="row">' +
+							'<div id="post1img" class="col-sm-5"><img src="image/jsvideo1.png" id="boximg"></div>' +
+							'<div id="post1text" class="col-sm-7">' +
+								'<h4>Серия уроков по создания плюшек помощью JQuery</h4>' +
+								'<div class="text">' +
+								'<p>Серия уроков для создания адаптивного меню, слайдеров, вкладок, слайдшоу, попапов на JQuery.</p>' +
+								'<p><a class="linktosite" href="https://www.youtube.com/watch?v=_Lhhw_Tdv24&list=PLhSMKtAqXupEfyYQNlxOxb4CdRa66bMGa">Перейти к источнику...</a></p>' +
+								'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post3" class="row">' +
+							'<div id="post1img" class="col-sm-5"><img src="image/jsvideo3.png" id="boximg"></div>' +
+							'<div id="post1text" class="col-sm-7">' +
+								'<h4>Серия уроков по JQuery</h4>' +
+								'<div class="text">' +
+								'<p>Серия уроков по JQuery основы.</p>' +
+								'<p><a class="linktosite" href="https://www.youtube.com/watch?v=rxqcWvcObFE&list=PLY4rE9dstrJxST3xftg5kSCQdUB8hvj4S">Перейти к источнику...</a></p>' +
+								'</div>' +
+						'</div>' +
+					'</div>';
+		function jsvideo() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJsvideo;
+		}
+		jsvideoContent.addEventListener('click', jsvideo);
+	</script>
 </body>
 </html>
