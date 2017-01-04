@@ -32,7 +32,7 @@
 				<div id="htmlmenucontainer" class="col-sm-4 col-xs-6 row">
 					<ul id="htmlmenu">
 						<li id="jsteorybutton" class="htmlli">Теория</li>
-						<li class="htmlli">Полезные Статьи</li>
+						<li id="jssovetbutton" class="htmlli">Полезные Статьи</li>
 						<li id="jsquestbutton" class="htmlli">Задачи</li>
 						<li id="jsvideobutton" class="htmlli">Видеоуроки</li>
 						<li id="jsframebutton" class="htmlli">Фреймверки</li>
@@ -101,7 +101,8 @@
 							'<p>Задачи по js из книги "Выразительный JavaScript".</p>' +
 							'<p><a class="linktosite" href="http://www.itmathrepetitor.ru/zadachi-po-javascript-iz-knigi-vyrazitelnyjj-javascript/">Перейти к источнику...</a></p>' +
 							'</div>' +
-						'</div>';
+						'</div>' +
+					'</div>';
 		function jsquest() {
 			htmlContent.style.cssText = 'display: block;';
 			htmlContent.innerHTML = pattJsquest;
@@ -117,7 +118,8 @@
 							'<p>Самый популярный фреймверк по js.</p>' +
 							'<p><a class="linktosite" href="https://jquery.com/">Перейти к источнику...</a></p>' +
 							'</div>' +
-						'</div>';
+						'</div>' +
+					'</div>';
 		function jsframe() {
 			htmlContent.style.cssText = 'display: block;';
 			htmlContent.innerHTML = pattJsframe;
@@ -160,6 +162,23 @@
 			htmlContent.innerHTML = pattJsvideo;
 		}
 		jsvideoContent.addEventListener('click', jsvideo);
+
+		jssovetContent = document.getElementById('jssovetbutton'),
+			pattJssovet = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/jssovet1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>JS ивенты</h4>' +
+							'<div class="text">' +
+							'<p>Список js ивентов.</p>' +
+							'<p><a class="linktosite" href="http://www.w3schools.com/jsref/dom_obj_event.asp">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function jssovet() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJssovet;
+		}
+		jssovetContent.addEventListener('click', jssovet);
 	</script>
 </body>
 </html>

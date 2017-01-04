@@ -166,3 +166,17 @@ h4 {
 .linktosite {
 	text-decoration: none !important;
 }
+
+#bosscontent {
+	border: 2px solid #555555;
+ 	border-radius: 4px;
+ 	padding-left: 12px;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	text-align: center;
+ 	color: #969595;
+}
+
+.bosslink {
+	text-align: left;
+}
