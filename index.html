@@ -114,7 +114,7 @@
 				</div>
 				<h3>Бесплатный SEO + анализ веб-сайтов</h3>
 				<div class="bosslink">
-					<p><a href="https://moz.com/researchtools/ose/">Open Site Explorer:/a>Понятный инструмент анализа ссылок.</p>
+					<p><a href="https://moz.com/researchtools/ose/">Open Site Explorer:</a>Понятный инструмент анализа ссылок.</p>
 					<p><a href="https://ahrefs.com/">Ahrefs:</a>Анализ обратных ссылок и прочее.</p>
 					<p><a href="https://www.quicksprout.com/">Quick Sprout: </a>Полноценный анализ веб-сайта.</p>
 					<p><a href="https://wordpress.org/plugins/wordpress-seo/">WordPress SEO by Yoast:</a>Оптимизация сайта на WordPress.</p>
@@ -130,7 +130,7 @@
 					<p><a href="https://www.internetmarketingninjas.com/seo-tools/google-sitemap-generator/">Broken Links:</a>Поиск битых ссылок, редиректов и т.д.</p>
 					<p><a href="http://www.copyscape.com/">Copyscape:</a>Поиск копий вашей страницы по всему интернету.</p>
 					<p><a href="https://www.woorank.com/">Woorank:</a>Инструмент SEO.</p>
-					<p><a href="https://developers.google.com/speed/pagespeed/insights/">Google Pagespeed Insights:</a>Проверьте производительность вашего веб-сайта./p>
+					<p><a href="https://developers.google.com/speed/pagespeed/insights/">Google Pagespeed Insights:</a>Проверьте производительность вашего веб-сайта.</p>
 					<p><a href="https://tools.pingdom.com/">Pingdom Website Speed Test:</a>Проверьте время загрузки вашего веб-сайта.</p>
 					<p><a href="https://gtmetrix.com/">GTMetrics:</a>Проанализируйте производительность любого веб-сайта.</p>
 					<p><a href="https://moz.com/local/search">Moz Local:</a>Может ли вас найти клиент, поиск по индексу (англ.).</p>
@@ -204,7 +204,7 @@
 					<p><a href="http://blog.klout.com/2014/06/klout-browser-extensions/">Klout:</a>Мгновенно расскажите о статье вашим друзьям с помощью расширения для браузера.</p>
 					<p><a href="https://ritekit.com/hashtag-academy/ritetag-browser-extensions-scheduling-productivity">Ritetag: </a>Мгновенный анализ хештегов.</p>
 					<p><a href="https://chrome.google.com/webstore/detail/social-analytics/pgckigmaefoaemjpijdepakcghjkggmg/related">Social Analytics:</a>Анализ любой страницы с точки зрения социальных платформ (количество лайков и т.п.).</p>
-					<p><a href="http://crowdriff.com/riffle/">Riffle:</a>Полный профиль и информация о любом пользователе Twitter./p>
+					<p><a href="http://crowdriff.com/riffle/">Riffle:</a>Полный профиль и информация о любом пользователе Twitter.</p>
 					<p><a href="https://buffer.com/">Buffer Free Plan:</a>Планируйте публикации в Twitter, Facebook, Linkedin, Google+.</p>
 					<p><a href="https://bitly.com/">Bitly:</a>Создавайте, делитесь и ведите учет коротких ссылок.</p>
 					<p><a href="http://filament.io/">Filament:</a>Создание красивых полосок с кнопками социальных сетей.</p>
@@ -519,7 +519,7 @@
 			</div>
 		</div>
 	</main>
-	<footer>
+	<footer id="footer">
 		<div class="container-fluid row">
 			<div id="footbloc" class="container row">
 				<div id="socialcontainer" class="col-xs-2 col-xs-offset-5 row">
@@ -529,5 +529,29 @@
 			</div>
 		</div>
 	</footer>
+	<div id="topbutton">
+		<div class="topnavigation"></div>
+	</div>
+	<script>
+														// Скрипт для высоты
+		var minHeight = document.documentElement.clientHeight;
+		document.body.style.cssText = 'min-height: '+minHeight+'px;';
+														// Скрипт для кнопки
+		var topButton = document.getElementById('topbutton'),
+			body = document.body;
+			body.addEventListener('wheel', visibleButton)
+		function visibleButton() {
+			if (document.body.scrollTop > 300) {
+				topButton.style.cssText = 'display: block;';
+			} else {
+				topButton.style.cssText = 'display: none;';
+			}
+		}
+		topButton.addEventListener('click', toTop)
+		function toTop() {
+			window.scrollTo(0,0);
+			topButton.style.cssText = 'display: none;';
+		}
+	</script>
 </body>
 </html>

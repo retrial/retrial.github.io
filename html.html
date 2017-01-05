@@ -383,6 +383,9 @@
 			htmlContent.innerHTML = pattFrame;
 		}
 		frameContent.addEventListener('click', frame);
+														// Скрипт для высоты
+		var minHeight = document.documentElement.clientHeight;
+		document.body.style.cssText = 'min-height: '+minHeight+'px;';
 	</script>
 </body>
 </html>

@@ -1,6 +1,5 @@
 body {
 	background: radial-gradient(#454444, #232323) no-repeat;
-	min-height: 1200px;
 }
 
 header {
@@ -187,4 +186,50 @@ h4 {
 
 .bosslink1 {
 	text-align: center;
+}
+
+#topbutton {
+	width: 50px;
+	height: 50px;
+	background: linear-gradient(90deg, #323232 0%, #3F3F3F 50%, #1C1C1C 150%);
+	position: fixed;
+	top: 80%;
+	right: 7%;
+	border-radius: 10px;
+	cursor: pointer;
+	display: none;
+}
+
+.topnavigation {
+	width: 5px;
+	height: 30px;
+	background: linear-gradient(90deg, #7E898F 0%, #636C75 100%);
+	position: absolute;
+	top: 12px;
+	left: 45%;
+	border-radius: 2px;
+}
+
+.topnavigation:before {
+	content: "";
+	width: 5px;
+	height: 15px;
+	background: linear-gradient(90deg, #7E898F 0%, #636C75 100%);
+	position: absolute;
+	transform: skewX(-40deg);
+	left: -6px;
+	top: 0px;
+	border-radius: 2px;
+}
+
+.topnavigation:after {
+	content: "";
+	width: 5px;
+	height: 15px;
+	background: linear-gradient(90deg, #7E898F 0%, #636C75 100%);
+	position: absolute;
+	transform: skewX(40deg);
+	left: 6px;
+	top: 0px;
+	border-radius: 2px;
 }
