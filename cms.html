@@ -31,17 +31,15 @@
 			<div id="maincontainer" class="container row">
 				<div id="htmlmenucontainer" class="col-sm-4 col-xs-6 row">
 					<ul id="htmlmenu">
-						<li class="htmlli">Полезные Статьи</li>
-						<li class="htmlli">Видеоуроки</li>
-						<li class="htmlli">WordPress</li>
-						<li class="htmlli">Joomla</li>
-						<li class="htmlli">OpenCart</li>
+						<li id="cmssovetbutton" class="htmlli">Полезные Статьи</li>
+						<li id="cmsvideobutton" class="htmlli">Видеоуроки</li>
+						<li id="cmswpbutton" class="htmlli">WordPress</li>
+						<li id="cmsjoomlabutton" class="htmlli">Joomla</li>
+						<li id="cmsocbutton" class="htmlli">OpenCart</li>
 						<li class="htmlli">Примеры кода</li>
 					</ul>
 				</div>
-				<div id="htmlcontent" class="col-sm-8 row">
-					
-				</div>
+				<div id="htmlcontent" class="col-sm-8 row"></div>
 			</div>
 		</div>
 	</main>
@@ -59,6 +57,122 @@
 														// Скрипт для высоты
 		var minHeight = document.documentElement.clientHeight;
 		document.body.style.cssText = 'min-height: '+minHeight+'px;';
+
+		var htmlContent = document.getElementById('htmlcontent'),
+			cmssovetContent = document.getElementById('cmssovetbutton'),
+			pattCmssovet = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/cmssovet1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Зачем нужны CMS</h4>' +
+							'<div class="text">' +
+							'<p>Обьясняющее видео, для чего нужны cms.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=bb-y7Hgt4DM">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function cmssovet() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattCmssovet;
+		}
+		cmssovetContent.addEventListener('click', cmssovet);
+
+		cmsvideoContent = document.getElementById('cmsvideobutton'),
+			pattCmsvideo = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/cmsvideo1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Интеграция верстки в WP</h4>' +
+							'<div class="text">' +
+							'<p>Залил верстку в WP за 12 имнут.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=7akPICFR-AI">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/cmsvideo2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Серия видео уроков по WP</h4>' +
+							'<div class="text">' +
+							'<p>Отличная серия видеоуроков по WP.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=gtOfYLar5tk&list=PL2CKgzoZxvxUBjmSaomBEGW-sZ6Y6pM7A">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function cmsvideo() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattCmsvideo;
+		}
+		cmsvideoContent.addEventListener('click', cmsvideo);
+
+		cmswpContent = document.getElementById('cmswpbutton'),
+			pattCmswp = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/cmswp1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Официальный сайт WP</h4>' +
+							'<div class="text">' +
+							'<p>Официальный сайт WP откуда можно его скачать.</p>' +
+							'<p><a class="linktosite" href="https://wordpress.org/download/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/cmswp2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Создание темы для WP</h4>' +
+							'<div class="text">' +
+							'<p>Создание темы для WP с 0.</p>' +
+							'<p><a class="linktosite" href="https://habrahabr.ru/post/228523/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/cmswp3.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Плагины для WP</h4>' +
+							'<div class="text">' +
+							'<p>Подборка полезных плагинов для WP.</p>' +
+							'<p><a class="linktosite" href="https://wpcafe.org/category/plugins/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' ;
+		function cmswp() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattCmswp;
+		}
+		cmswpContent.addEventListener('click', cmswp);
+
+		cmsjoomlaContent = document.getElementById('cmsjoomlabutton'),
+			pattCmsjoomla = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/cmsjoomla1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Официальный сайт Joomla</h4>' +
+							'<div class="text">' +
+							'<p>Официальный сайт Joomla откуда можно ее скачать.</p>' +
+							'<p><a class="linktosite" href="https://www.joomla.org/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function cmsjoomla() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattCmsjoomla;
+		}
+		cmsjoomlaContent.addEventListener('click', cmsjoomla);
+
+		cmsocContent = document.getElementById('cmsocbutton'),
+			pattCmsoc = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/cmsoc1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Официальный сайт OpenCart</h4>' +
+							'<div class="text">' +
+							'<p>Официальный сайт OpenCart откуда можно его скачать.</p>' +
+							'<p><a class="linktosite" href="https://www.opencart.com/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function cmsoc() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattCmsoc;
+		}
+		cmsocContent.addEventListener('click', cmsoc);
 	</script>
 </body>
 </html>

@@ -31,17 +31,15 @@
 			<div id="maincontainer" class="container row">
 				<div id="htmlmenucontainer" class="col-sm-4 col-xs-6 row">
 					<ul id="htmlmenu">
-						<li class="htmlli">Полезные Статьи</li>
-						<li class="htmlli">Видеоуроки</li>
-						<li class="htmlli">LESS</li>
-						<li class="htmlli">SASS</li>
-						<li class="htmlli">Stylus</li>
+						<li id="presovetbutton" class="htmlli">Полезные Статьи</li>
+						<li id="prevideobutton" class="htmlli">Видеоуроки</li>
+						<li id="prelessbutton" class="htmlli">LESS</li>
+						<li id="presassbutton" class="htmlli">SASS</li>
+						<li id="prestylusbutton" class="htmlli">Stylus</li>
 						<li class="htmlli">Примеры кода</li>
 					</ul>
 				</div>
-				<div id="htmlcontent" class="col-sm-8 row">
-					
-				</div>
+				<div id="htmlcontent" class="col-sm-8 row"></div>
 			</div>
 		</div>
 	</main>
@@ -59,6 +57,92 @@
 														// Скрипт для высоты
 		var minHeight = document.documentElement.clientHeight;
 		document.body.style.cssText = 'min-height: '+minHeight+'px;';
+
+		var htmlContent = document.getElementById('htmlcontent'),
+			presovetContent = document.getElementById('presovetbutton'),
+			pattPresovet = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/presovet1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Зачем нужны Препроцесоры</h4>' +
+							'<div class="text">' +
+							'<p>В чем + препроцесоров и как они работают.</p>' +
+							'<p><a class="linktosite" href="https://habrahabr.ru/post/214143/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function presovet() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattPresovet;
+		}
+		presovetContent.addEventListener('click', presovet);
+
+		prevideoContent = document.getElementById('prevideobutton'),
+			pattPrevideo = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/prevideo1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Серия видеоуроков по Sass</h4>' +
+							'<div class="text">' +
+							'<p>Cерия видеоуроков по Sass.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=iy5geRAZGm8&index=2&list=PLcVuGt1dXgc0G1pCG1J9KjTFtTMsSs_9z">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function prevideo() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattPrevideo;
+		}
+		prevideoContent.addEventListener('click', prevideo);
+
+		prelessContent = document.getElementById('prelessbutton'),
+			pattPreless = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/preless1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Официальный сайт Less</h4>' +
+							'<div class="text">' +
+							'<p>Официальный сайт Less.</p>' +
+							'<p><a class="linktosite" href="http://lesscss.org/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function preless() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattPreless;
+		}
+		prelessContent.addEventListener('click', preless);
+
+		presassContent = document.getElementById('presassbutton'),
+			pattPresass = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/presass1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Sass</h4>' +
+							'<div class="text">' +
+							'<p>Sass.</p>' +
+							'<p><a class="linktosite" href="http://sass-lang.com/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function presass() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattPresass;
+		}
+		presassContent.addEventListener('click', presass);
+
+		prestylusContent = document.getElementById('prestylusbutton'),
+			pattPrestylus = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/prestylus1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Stylus</h4>' +
+							'<div class="text">' +
+							'<p>Stylus.</p>' +
+							'<p><a class="linktosite" href="http://stylus-lang.com/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function prestylus() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattPrestylus;
+		}
+		prestylusContent.addEventListener('click', prestylus);
 	</script>
 </body>
 </html>
