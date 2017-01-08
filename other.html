@@ -31,12 +31,12 @@
 			<div id="maincontainer" class="container row">
 				<div id="htmlmenucontainer" class="col-sm-4 col-xs-6 row">
 					<ul id="htmlmenu">
-						<li class="htmlli">Фриланс</li>
-						<li class="htmlli">Поиск Работы</li>
-						<li class="htmlli">Как составить резюме</li>
-						<li class="htmlli">IT Мероприятия в Харькове</li>
+						<li id="flbutton" class="htmlli">Фриланс</li>
+						<li id="jobbutton" class="htmlli">Поиск Работы</li>
+						<li id="resumebutton" class="htmlli">Как составить резюме</li>
+						<li id="meetbutton" class="htmlli">IT Мероприятия в Харькове</li>
 						<li class="htmlli">Полезные сайты</li>
-						<li class="htmlli">Английский язык</li>
+						<li id="engbutton" class="htmlli">Английский язык</li>
 					</ul>
 				</div>
 				<div id="htmlcontent" class="col-sm-8 row"></div>
@@ -59,22 +59,101 @@
 		document.body.style.cssText = 'min-height: '+minHeight+'px;';
 
 		var htmlContent = document.getElementById('htmlcontent'),
-			presovetContent = document.getElementById('presovetbutton'),
-			pattPresovet = '<div id="post1" class="row">' +
-						'<div id="post1img" class="col-sm-5"><img src="image/presovet1.png" id="boximg"></div>' +
+			flContent = document.getElementById('flbutton'),
+			pattFl = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/fl1.png" id="boximg"></div>' +
 						'<div id="post1text" class="col-sm-7">' +
-							'<h4>Зачем нужны Препроцесоры</h4>' +
+							'<h4>Серия видео уроков по фрилансу</h4>' +
 							'<div class="text">' +
-							'<p>В чем + препроцесоров и как они работают.</p>' +
-							'<p><a class="linktosite" href="https://habrahabr.ru/post/214143/">Перейти к источнику...</a></p>' +
+							'<p>Фриланс, как получить первый заказ и тд. серия видеоуроков.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=yPxuQsZGLXo&list=PLkrOIHXGvso13D3HgLg2CmXzH21LGjrJX">Перейти к источнику...</a></p>' +
 							'</div>' +
 						'</div>' +
 					'</div>';
-		function presovet() {
+		function fl() {
 			htmlContent.style.cssText = 'display: block;';
-			htmlContent.innerHTML = pattPresovet;
+			htmlContent.innerHTML = pattFl;
 		}
-		presovetContent.addEventListener('click', presovet);
+		flContent.addEventListener('click', fl);
+
+		jobContent = document.getElementById('jobbutton'),
+			pattJob = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/job1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>job.dou.ua</h4>' +
+							'<div class="text">' +
+							'<p>Хороший ресурс для поиска работы.</p>' +
+							'<p><a class="linktosite" href="https://jobs.dou.ua/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function job() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJob;
+		}
+		jobContent.addEventListener('click', job);
+
+		resumeContent = document.getElementById('resumebutton'),
+			pattResume = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/resume1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Как составить резюмэ</h4>' +
+							'<div class="text">' +
+							'<p>Сайт поможет составить резюмэ.</p>' +
+							'<p><a class="linktosite" href="http://blog.olegdubas.com/2013/03/17/resume/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/resume2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Резюмэ джуна</h4>' +
+							'<div class="text">' +
+							'<p>Идеальное резюме джуна =).</p>' +
+							'<p><a class="linktosite" href="http://ain.ua/idealnoe-rezyume-juniora-kak-najti-luchshuyu-rabotu-v-sfere-informacionnyx-texnologij">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function resume() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattResume;
+		}
+		resumeContent.addEventListener('click', resume);
+
+		meetContent = document.getElementById('meetbutton'),
+			pattMeet = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/meet1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Календарь IT событий в Харькове</h4>' +
+							'<div class="text">' +
+							'<p>Встаречи, события, мероприятия).</p>' +
+							'<p><a class="linktosite" href="https://dou.ua/calendar/city/%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function meet() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattMeet;
+		}
+		meetContent.addEventListener('click', meet);
+
+		engContent = document.getElementById('engbutton'),
+			pattEng = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/eng1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Английский для IT</h4>' +
+							'<div class="text">' +
+							'<p>Серия видеоуроков - английский для IT.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=9iUHLWyw1zs&list=PLjYziLp9A2SAgpGmDTCuxlJcriK8MgMph&index=1">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function eng() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattEng;
+		}
+		engContent.addEventListener('click', eng);
+	</script>
 	</script>
 </body>
 </html>
