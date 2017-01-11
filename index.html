@@ -29,6 +29,7 @@
 	<main>
 		<div class="container-fluid row">
 			<div id="bosscontent" class="container row col-sm-8 col-sm-offset-2">
+				<div id="test"></div>
 				<div class="bosslink1">
 					<p>Данный материал был взят с сайта <a href="http://bookflow.ru/400-potryasayushhih-besplatnyh-servisov/">bookflow.ru</a></p>
 				</div>
@@ -537,13 +538,16 @@
 		var minHeight = document.documentElement.clientHeight;
 		document.body.style.cssText = 'min-height: '+minHeight+'px;';
 														// Скрипт для кнопки
-		var topButton = document.getElementById('topbutton'),
-			body = document.body;
-			body.addEventListener('wheel', visibleButton)
-		function visibleButton() {
-			if (document.body.scrollTop > 900) {
-				topButton.style.cssText = 'display: block;';
+		var topButton = document.getElementById('topbutton');
+		window.addEventListener('scroll', tovisible)
+		function tovisible() {
+			if (document.documentElement.clientWidth > 750) {
+				if (window.scrollY > 900) {
+			topButton.style.cssText = 'display: block;';
 			} else {
+				topButton.style.cssText = 'display: none;';
+			}
+			}else {
 				topButton.style.cssText = 'display: none;';
 			}
 		}
@@ -552,6 +556,13 @@
 			window.scrollTo(0,0);
 			topButton.style.cssText = 'display: none;';
 		}
+		window.addEventListener('resize', function() {
+			if (document.documentElement.clientWidth < 750) {
+				topButton.style.cssText = 'display: none;';
+			} else {
+				topButton.style.cssText = 'display: block;';
+			}
+		})
 	</script>
 </body>
 </html>
