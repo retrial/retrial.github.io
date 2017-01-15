@@ -49,6 +49,11 @@ p {
 	flex-wrap: wrap;
 }
 
+#htmlmenucontainer {
+	margin-left: 45px;
+	margin-bottom: 20px;
+}
+
 #mainmenu {
 	list-style: none;
 	padding: 0px;
@@ -137,6 +142,7 @@ p {
 	margin: 0px;
 	border: 2px solid #555555;
  	border-radius: 4px;
+ 	min-width: 155px;
 }
 
 .htmlli {
@@ -163,6 +169,11 @@ p {
 #post1img {
 	float: left;
 	padding: 5px;
+	max-width: 100%;
+}
+
+#post1img>img {
+	max-width: 100%;
 }
 
 #post1text {
@@ -251,5 +262,11 @@ p {
  @media screen and (max-width: 339px) {
 	.margin-a {
 		margin-left: 0px;
+	}
+}
+
+ @media screen and (max-width: 992px) {
+	#htmlmenucontainer {
+	margin-left: 0px;
 	}
 }
