@@ -1,15 +1,5 @@
 body {
 	background: radial-gradient(#454444, #232323) no-repeat;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-}
-
-#wrapper {
-	max-width: 1250px;
-	width: 100%;
 }
 
 header {
@@ -17,25 +7,17 @@ header {
 	padding-bottom: 5px;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-around;
 	max-width: 1250px;
 	width: 100%;
-}
+	margin: 0 auto;
 
-main {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	max-width: 1250px;
-	width: 100%;
 }
 
 footer {
-	padding-top: 5px;
-	padding-bottom: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -43,25 +25,23 @@ footer {
 	width: 100%;
 }
 
-p {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-#htmlmenucontainer {
-	margin-left: 45px;
-	margin-bottom: 20px;
-}
-
 #mainmenu {
 	list-style: none;
 	padding: 0px;
 	margin-bottom: 0px;
 	text-align: center;
+	margin-top: 25px;
 	border: 2px solid #555555;
  	border-radius: 4px;
  	margin-left: 15px;
+}
+
+#htmlmenucontainer {
+	margin-bottom: 20px;
+}
+
+#mainbloc {
+	margin: 0 auto;
 }
 
 .el {
@@ -131,6 +111,28 @@ p {
 	display: block;
 }
 
+.vk{
+	display: inline-block;
+}
+
+.github {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#footbloc {
+	margin: 0 auto;
+}
+
+#socialcontainer {
+	text-align: center;
+}
+
+main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
 #maincontainer {
 	margin: 0 auto;
 }
@@ -142,7 +144,6 @@ p {
 	margin: 0px;
 	border: 2px solid #555555;
  	border-radius: 4px;
- 	min-width: 155px;
 }
 
 .htmlli {
@@ -181,6 +182,10 @@ p {
 	color: #969595;
 }
 
+h4 {
+	text-align: center;
+}
+
 .linktosite {
 	text-decoration: none !important;
 }
@@ -188,34 +193,32 @@ p {
 #bosscontent {
 	border: 2px solid #555555;
  	border-radius: 4px;
+ 	padding-left: 12px;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
  	text-align: center;
  	color: #969595;
 }
 
-#bosslogo {
-	width: 95%;
-	margin: 0 auto;
-}
-
 .bosslink {
 	text-align: left;
-	margin-left: : 10px;
+}
+
+#bosslogo {
+	width: 100%;
 }
 
 .bosslink1 {
-	display: flex;
-	justify-content: center;
-	margin-left: : 10px;
+	text-align: center;
 }
 
 #topbutton {
 	width: 50px;
 	height: 50px;
 	background: linear-gradient(90deg, #323232 0%, #3F3F3F 50%, #1C1C1C 150%);
-	bottom: 0px;
 	position: fixed;
 	top: 80%;
-	right: 7%;
+	right: 4%;
 	border-radius: 10px;
 	cursor: pointer;
 	display: none;
@@ -253,20 +256,4 @@ p {
 	left: 6px;
 	top: 0px;
 	border-radius: 2px;
-}
-
-.margin-a {
-	margin-left: 5px;
-}
-
- @media screen and (max-width: 339px) {
-	.margin-a {
-		margin-left: 0px;
-	}
-}
-
- @media screen and (max-width: 992px) {
-	#htmlmenucontainer {
-	margin-left: 0px;
-	}
 }

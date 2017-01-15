@@ -24,9 +24,11 @@
 		</ul>
 	</header>
 	<main>
-			<div id="bosscontent">
+		<div class="container-fluid">
+			<div id="bosscontent" class="container row col-sm-10 col-sm-offset-1">
+				<div id="test"></div>
 				<div class="bosslink1">
-					<p>Данный материал был взят с сайта<a class="margin-a" href="http://bookflow.ru/400-potryasayushhih-besplatnyh-servisov/">bookflow.ru</a></p>
+					<p>Данный материал был взят с сайта <a href="http://bookflow.ru/400-potryasayushhih-besplatnyh-servisov/">bookflow.ru</a></p>
 				</div>
 				<img id="bosslogo" src="image/optim/bosscontent1.jpg">
 				<h3>Бесплатные Веб Сайты</h3>
@@ -513,6 +515,7 @@
 					<p><a href="http://startupequity.io/">Startup Equity Calculator:</a>Определитесь, какой частью в капитале вы можете поделиться с новым сотрудниками.</p>
 				</div>
 			</div>
+		</div>
 	</main>
 	<footer>
 		<div class="vk"><a id="tovk" href="https://vk.com/retral"></a></div>
@@ -529,7 +532,7 @@
 		var topButton = document.getElementById('topbutton');
 		window.addEventListener('scroll', tovisible)
 		function tovisible() {
-			if (document.documentElement.clientWidth > 1284) {
+			if (document.documentElement.clientWidth > 850) {
 				if (window.scrollY > 900) {
 			topButton.style.cssText = 'display: block;';
 			} else {
