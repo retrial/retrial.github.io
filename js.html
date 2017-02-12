@@ -35,7 +35,7 @@
 						<li id="jsframebutton" class="htmlli">Фреймверки</li>
 						<li class="htmlli">React.js</li>
 						<li class="htmlli">Node.js</li>
-						<li class="htmlli">Примеры кода</li>
+						<li id="jscode" class="htmlli">Примеры кода</li>
 					</ul>
 				</div>
 				<div id="htmlcontent" class="col-sm-8 col-xs-12 row"></div>
@@ -192,6 +192,23 @@
 			htmlContent.innerHTML = pattJssovet;
 		}
 		jssovetContent.addEventListener('click', jssovet);
+
+		jscodeContent = document.getElementById('jscode'),
+			pattJscode = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jscode1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Кнопка вверх для сайта js код.</h4>' +
+							'<div class="text">' +
+							'<p>Кнопка вверх для сайта, проверить результат выполнения кода можно на главной странице сайта.</p>' +
+							'<p><a class="linktosite" href="https://gist.github.com/ReTr1aL/8ad44f61f912d6379d5ea216f4092003">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function jscode() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJscode;
+		}
+		jscodeContent.addEventListener('click', jscode);
 
 												// Скрипт для высоты
 		var minHeight = document.documentElement.clientHeight;
