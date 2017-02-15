@@ -33,7 +33,7 @@
 						<li id="jsquestbutton" class="htmlli">Задачи</li>
 						<li id="jsvideobutton" class="htmlli">Видеоуроки</li>
 						<li id="jsframebutton" class="htmlli">Фреймверки</li>
-						<li class="htmlli">React.js</li>
+						<li id="jsreact" class="htmlli">React.js</li>
 						<li class="htmlli">Node.js</li>
 						<li id="jscode" class="htmlli">Примеры кода</li>
 					</ul>
@@ -209,6 +209,23 @@
 			htmlContent.innerHTML = pattJscode;
 		}
 		jscodeContent.addEventListener('click', jscode);
+
+		jsreactContent = document.getElementById('jsreact'),
+			pattJsreact = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jsreact1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Знакомство c React.</h4>' +
+							'<div class="text">' +
+							'<p>Серия видеоуроков по React.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=fQAKKXc6BCM&list=PLqHlAwsJRxAONt5CnjMMeKdYGv1CDRUOl">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function jsreact() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJsreact;
+		}
+		jsreactContent.addEventListener('click', jsreact);
 
 												// Скрипт для высоты
 		var minHeight = document.documentElement.clientHeight;
