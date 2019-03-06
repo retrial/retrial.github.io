@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ReTr1aL HTML + CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="stylesheets/concat/bundle.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div id="logo" class="">
+			<a href="https://retrial.github.io/"><img id="logotype" src="image/optim/logo.jpg" alt="ReTr1aL"></a>
+		</div>
+		<ul id="mainmenu">
+			<li class="el"><a id="maina1" href="html.html">HTML + CSS</a></li>
+			<li class="el"><a id="maina2" href="js.html">JavaScript</a></li>
+			<li class="el"><a id="maina3" href="cms.html">CMS</a></li>
+			<li class="el"><a id="maina4" href="preprocessors.html">Препроцесоры</a></li>
+			<li class="el"><a id="maina5" href="">Linux</a></li>
+			<li class="el"><a id="maina5" href="other.html">Другое</a></li>
+		</ul>
+	</header>
+	<main>
+		<div class="container-fluid">
+			<div id="maincontainer" class="container row">
+				<div id="htmlmenucontainer" class="col-sm-4 col-xs-12">
+					<ul id="htmlmenu">
+						<li id="jsteorybutton" class="htmlli">Теория</li>
+						<li id="jssovetbutton" class="htmlli">Полезные Статьи</li>
+						<li id="jsquestbutton" class="htmlli">Задачи</li>
+						<li id="jsvideobutton" class="htmlli">Видеоуроки</li>
+						<li id="jsframebutton" class="htmlli">Фреймверки</li>
+						<li id="jsreact" class="htmlli">React.js</li>
+						<li class="htmlli">Node.js</li>
+						<li id="jscode" class="htmlli">Примеры кода</li>
+					</ul>
+				</div>
+				<div id="htmlcontent" class="col-sm-8 col-xs-12 row"></div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="vk"><a id="tovk" href="https://vk.com/retral"></a></div>
+		<div class="github"><a id="togithub" href="https://github.com/ReTr1aL"></a></div>
+	</footer>
+	<script>
+			var htmlContent = document.getElementById('htmlcontent'),
+			jsteoryContent = document.getElementById('jsteorybutton'),
+			pattJsteory = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jsteory1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Learn JavaScript</h4>' +
+							'<div class="text">' +
+							'<p>Учебник по js от Ильи Кантера.</p>' +
+							'<p><a class="linktosite" href="https://learn.javascript.ru/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post2" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jsteory2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>JQuery для начинающих</h4>' +
+							'<div class="text">' +
+							'<p>Учебник по jquery от Антона Шевчука.</p>' +
+							'<p><a class="linktosite" href="http://anton.shevchuk.name/jquery-book/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post3" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jsteory3.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Клиентский JavaScript</h4>' +
+							'<div class="text">' +
+							'<p>Справичник по обьектам, методам и свойствам js.</p>' +
+							'<p><a class="linktosite" href="https://gitcode.ru/manuals/javascript">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function jsteory() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJsteory;
+		}
+		jsteoryContent.addEventListener('click', jsteory);
+
+		jsquestContent = document.getElementById('jsquestbutton'),
+			pattJsquest = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jsquest1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Задачи по js</h4>' +
+							'<div class="text">' +
+							'<p>Задачи по js из книги "Выразительный JavaScript".</p>' +
+							'<p><a class="linktosite" href="http://www.itmathrepetitor.ru/zadachi-po-javascript-iz-knigi-vyrazitelnyjj-javascript/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function jsquest() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJsquest;
+		}
+		jsquestContent.addEventListener('click', jsquest);
+
+		jsframeContent = document.getElementById('jsframebutton'),
+			pattJsframe = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jsframe1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>JQuery</h4>' +
+							'<div class="text">' +
+							'<p>Самый популярный фреймверк по js.</p>' +
+							'<p><a class="linktosite" href="https://jquery.com/">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function jsframe() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJsframe;
+		}
+		jsframeContent.addEventListener('click', jsframe);
+
+		jsvideoContent = document.getElementById('jsvideobutton'),
+			pattJsvideo = '<div id="post2" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jsvideo2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>JavaScript практика</h4>' +
+							'<div class="text">' +
+							'<p>Серия уроков по JavaScript для новичков.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=JISFx18J7nc&list=PLVfMKQXDAhGW0p_BEEe47UkCgNoS_dyki">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+						'<div id="post1" class="row">' +
+							'<div id="post1img" class="col-sm-5"><img src="image/optim/jsvideo1.png" id="boximg"></div>' +
+							'<div id="post1text" class="col-sm-7">' +
+								'<h4>Серия уроков по создания плюшек помощью JQuery</h4>' +
+								'<div class="text">' +
+								'<p>Серия уроков для создания адаптивного меню, слайдеров, вкладок, слайдшоу, попапов на JQuery.</p>' +
+								'<p><a class="linktosite" href="https://www.youtube.com/watch?v=_Lhhw_Tdv24&list=PLhSMKtAqXupEfyYQNlxOxb4CdRa66bMGa">Перейти к источнику...</a></p>' +
+								'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post3" class="row">' +
+							'<div id="post1img" class="col-sm-5"><img src="image/optim/jsvideo3.png" id="boximg"></div>' +
+							'<div id="post1text" class="col-sm-7">' +
+								'<h4>Серия уроков по JQuery</h4>' +
+								'<div class="text">' +
+								'<p>Серия уроков по JQuery основы.</p>' +
+								'<p><a class="linktosite" href="https://www.youtube.com/watch?v=rxqcWvcObFE&list=PLY4rE9dstrJxST3xftg5kSCQdUB8hvj4S">Перейти к источнику...</a></p>' +
+								'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post4" class="row">' +
+							'<div id="post1img" class="col-sm-5"><img src="image/optim/jsvideo4.png" id="boximg"></div>' +
+							'<div id="post1text" class="col-sm-7">' +
+								'<h4>JavaScript джедай</h4>' +
+								'<div class="text">' +
+								'<p>Серия уроков по JavaScript.</p>' +
+								'<p><a class="linktosite" href="https://www.youtube.com/watch?v=rpIxGwFz0Xs&list=PL363QX7S8MfSxcHzvkNEqMYbOyhLeWwem&index=15">Перейти к источнику...</a></p>' +
+								'</div>' +
+						'</div>' +
+					'</div>';
+		function jsvideo() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJsvideo;
+		}
+		jsvideoContent.addEventListener('click', jsvideo);
+
+		jssovetContent = document.getElementById('jssovetbutton'),
+			pattJssovet = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jssovet1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>JS ивенты</h4>' +
+							'<div class="text">' +
+							'<p>Список js ивентов.</p>' +
+							'<p><a class="linktosite" href="http://www.w3schools.com/jsref/dom_obj_event.asp">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>' +
+					'<div id="post2" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jssovet2.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>JQuery Wiki</h4>' +
+							'<div class="text">' +
+							'<p>Энциклопедия по jquery</p>' +
+							'<p><a class="linktosite" href="http://jquery.page2page.ru/index.php5/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function jssovet() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJssovet;
+		}
+		jssovetContent.addEventListener('click', jssovet);
+
+		jscodeContent = document.getElementById('jscode'),
+			pattJscode = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jscode1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Кнопка вверх для сайта js код.</h4>' +
+							'<div class="text">' +
+							'<p>Кнопка вверх для сайта, проверить результат выполнения кода можно на главной странице сайта.</p>' +
+							'<p><a class="linktosite" href="https://gist.github.com/ReTr1aL/8ad44f61f912d6379d5ea216f4092003">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function jscode() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJscode;
+		}
+		jscodeContent.addEventListener('click', jscode);
+
+		jsreactContent = document.getElementById('jsreact'),
+			pattJsreact = '<div id="post1" class="row">' +
+						'<div id="post1img" class="col-sm-5"><img src="image/optim/jsreact1.png" id="boximg"></div>' +
+						'<div id="post1text" class="col-sm-7">' +
+							'<h4>Знакомство c React.</h4>' +
+							'<div class="text">' +
+							'<p>Серия видеоуроков по React.</p>' +
+							'<p><a class="linktosite" href="https://www.youtube.com/watch?v=fQAKKXc6BCM&list=PLqHlAwsJRxAONt5CnjMMeKdYGv1CDRUOl">Перейти к источнику...</a></p>' +
+							'</div>' +
+						'</div>' +
+					'</div>';
+		function jsreact() {
+			htmlContent.style.cssText = 'display: block;';
+			htmlContent.innerHTML = pattJsreact;
+		}
+		jsreactContent.addEventListener('click', jsreact);
+
+												// Скрипт для высоты
+		var minHeight = document.documentElement.clientHeight;
+		document.body.style.cssText = 'min-height: '+minHeight+'px;';
+	</script>
+</body>
+</html>

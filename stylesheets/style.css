@@ -1,0 +1,259 @@
+body {
+	background: radial-gradient(#454444, #232323) no-repeat;
+}
+
+header {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-around;
+	max-width: 1250px;
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+footer {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	max-width: 1250px;
+	width: 100%;
+}
+
+#mainmenu {
+	list-style: none;
+	padding: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+	margin-top: 25px;
+	border: 2px solid #555555;
+ 	border-radius: 4px;
+ 	margin-left: 15px;
+}
+
+#htmlmenucontainer {
+	margin-bottom: 20px;
+}
+
+#mainbloc {
+	margin: 0 auto;
+}
+
+.el {
+	display: inline-block;
+}
+ #maina1 {
+ 	text-decoration: none;
+ 	display: block;
+ 	padding: 10px;
+ 	position: relative;
+ }
+
+  #maina2 {
+ 	text-decoration: none;
+ 	display: block;
+ 	padding: 10px;
+ 	position: relative;
+ }
+
+  #maina3 {
+ 	text-decoration: none;
+ 	display: block;
+ 	padding: 10px;
+ 	position: relative;
+ }
+
+  #maina4 {
+ 	text-decoration: none;
+ 	display: block;
+ 	padding: 10px;
+ 	position: relative;
+ }
+
+  #maina5 {
+ 	text-decoration: none;
+ 	display: block;
+ 	padding: 10px;
+ 	position: relative;
+ }
+
+ #logotype {
+ 	width: 90px;
+ 	border-radius: 50%;
+ }
+
+ @media screen and (max-width: 1200px) {
+	#mainmenu {
+		margin-top: 3px;
+	}
+}
+
+#tovk {
+	width: 50px;
+	height: 50px;
+	border-radius: 40%;
+	background: url(../../image/optim/vk.png);
+	background-size: 100% 100%; 
+	display: block;
+}
+
+#togithub {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: url(../../image/optim/github.png) -5px -5px;
+	background-size: 120% 120%;
+	display: block;
+}
+
+.vk{
+	display: inline-block;
+}
+
+.github {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+#footbloc {
+	margin: 0 auto;
+}
+
+#socialcontainer {
+	text-align: center;
+}
+
+main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#maincontainer {
+	margin: 0 auto;
+}
+
+#htmlmenu {
+	list-style: none;
+	padding: 0px;
+	max-width: 160px;
+	margin: 0px;
+	border: 2px solid #555555;
+ 	border-radius: 4px;
+}
+
+.htmlli {
+	padding: 10px;
+	color: #3378b3;
+	cursor: pointer;
+}
+
+.htmlli:hover {
+	color: #23527c;
+}
+
+#htmlcontent {
+	border: 2px solid #555555;
+ 	border-radius: 4px;
+ 	display: none;
+}
+
+#boximg {
+	width: 300px;
+	height: 200px;
+}
+
+#post1img {
+	float: left;
+	padding: 5px;
+	max-width: 100%;
+}
+
+#post1img>img {
+	max-width: 100%;
+}
+
+#post1text {
+	float: left;
+	color: #969595;
+}
+
+h4 {
+	text-align: center;
+}
+
+.linktosite {
+	text-decoration: none !important;
+}
+
+#bosscontent {
+	border: 2px solid #555555;
+ 	border-radius: 4px;
+ 	padding-left: 12px;
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ 	text-align: center;
+ 	color: #969595;
+}
+
+.bosslink {
+	text-align: left;
+}
+
+#bosslogo {
+	width: 100%;
+}
+
+.bosslink1 {
+	text-align: center;
+}
+
+#topbutton {
+	width: 50px;
+	height: 50px;
+	background: linear-gradient(90deg, #323232 0%, #3F3F3F 50%, #1C1C1C 150%);
+	position: fixed;
+	top: 80%;
+	right: 4%;
+	border-radius: 10px;
+	cursor: pointer;
+	display: none;
+}
+
+.topnavigation {
+	width: 5px;
+	height: 30px;
+	background: linear-gradient(90deg, #7E898F 0%, #636C75 100%);
+	position: absolute;
+	top: 12px;
+	left: 45%;
+	border-radius: 2px;
+}
+
+.topnavigation:before {
+	content: "";
+	width: 5px;
+	height: 15px;
+	background: linear-gradient(90deg, #7E898F 0%, #636C75 100%);
+	position: absolute;
+	transform: skewX(-40deg);
+	left: -6px;
+	top: 0px;
+	border-radius: 2px;
+}
+
+.topnavigation:after {
+	content: "";
+	width: 5px;
+	height: 15px;
+	background: linear-gradient(90deg, #7E898F 0%, #636C75 100%);
+	position: absolute;
+	transform: skewX(40deg);
+	left: 6px;
+	top: 0px;
+	border-radius: 2px;
+}
