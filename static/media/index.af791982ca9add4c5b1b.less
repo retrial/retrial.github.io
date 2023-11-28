@@ -1,0 +1,51 @@
+.mb {
+  margin-bottom: 20px;
+}
+
+.adminUsersList {
+  display: flex;
+  flex-direction: column;
+
+  & > li {
+    display: flex;
+    flex-direction: row!important;
+    align-items: center;
+    box-sizing: border-box;
+
+    & > span {
+      flex: 1;
+      padding: 0 8px;
+      box-sizing: border-box;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      background: var(--main-bg-color);
+      border-radius: 16px 0 0 16px;
+      margin-top: 0!important;
+      margin-right: 2px;
+    }
+
+    & > input {
+      padding: 0 8px;
+      flex: 3;
+      height: 30px;
+    }
+
+    & > div {
+      flex: 3;
+    }
+  }
+}
+
+.adminTableActions {
+  cursor: pointer;
+  width: 40px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+
+  & > i {
+    font-size: 14px;
+  }
+}

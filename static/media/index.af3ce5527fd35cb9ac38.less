@@ -1,0 +1,82 @@
+.popupOverlay {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  z-index: 999;
+  justify-content: center;
+
+  .popupContent {
+
+    position: relative;
+    margin: auto;
+
+    .modalPopup {
+      width: 300px;
+      background-color: var(--light-gray-bg);
+      z-index: 10000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      label {
+        align-self: flex-start;
+        font-size: 12px;
+        margin-bottom: 6px;
+        margin-left: 14px;
+      }
+
+      &-comment {
+        margin-bottom: 20px;
+        width: 90%;
+        background: var(--no-active-tabs);
+        padding-left: 8px;
+        color: var(--text-wite-color);
+        box-sizing: border-box;
+        font-size: 12px;
+      }
+
+      h2 {
+        color: var(--text-wite-color);
+        text-align: center;
+        padding: 15px;
+        font-weight: 300;
+        font-size: 18px;
+      }
+
+      &-buttons {
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+
+        span {
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 10px;
+          color: var(--text-wite-color);
+          text-transform: uppercase;
+          flex: 1;
+          margin: 0 5px;
+          height: 40px;
+
+          &:nth-child(1) {
+            background: var(--red-color);
+          }
+
+          &:last-child {
+            background: var(--light-grey);
+          }
+        }
+      }
+    }
+  }
+}
+

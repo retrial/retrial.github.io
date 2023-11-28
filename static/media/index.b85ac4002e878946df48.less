@@ -1,0 +1,57 @@
+.adminAccountTables-wrap {
+  display: flex;
+}
+
+.csvBankStatements-match, .csvBankStatements-archive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.csvBankStatements-match {
+  background: var(--green-color);
+}
+
+.csvBankStatements-archive {
+  background: orange;
+}
+
+.csvBankStatements-input {
+  width: 100%;
+  height: 80%;
+  font-size: 12px;
+  padding: 0 4px;
+  box-sizing: border-box;
+  color: #fff;
+  background: #252f35;
+  border: 1px solid var(--no-active-tabs);
+  border-radius: 4px;
+}
+.csvBankStatements-disableInput {
+  background: #1d262c;
+}
+
+.adminAccountTables-left {
+  margin-bottom: 20px;
+}
+
+.requestTypes-wrap {
+  display: flex;
+  margin-right: 20px;
+  border: 1px solid var(--light-gray-bg);
+}
+
+.requestType {
+  display: flex;
+  padding: 0 8px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &-active {
+    background: var(--light-gray-bg);
+  }
+}

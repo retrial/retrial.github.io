@@ -1,0 +1,65 @@
+.meManagement {
+  box-sizing: border-box;
+  border: 1px solid var(--main-bg-color);
+max-width: 500px;
+  &-header {
+    display: flex;
+    border-bottom: 1px solid var(--main-bg-color);
+
+    span {
+      box-sizing: border-box;
+      font-size: 12px;
+      align-items: center;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      border-right: 1px solid var(--main-bg-color);
+       &:last-child {
+         flex: 2;
+         border-right: none;
+       }
+    }
+  }
+  &-body {
+    list-style: none;
+    & > li {
+      border-bottom: 1px solid var(--main-bg-color);
+      font-size: 12px;
+      display: flex;
+
+      &:nth-last-child(1) {
+        border-bottom: none;
+      }
+
+      .active {
+        color: var(--green-color);
+      }
+
+      .stopped {
+        color: var(--red-color);
+      }
+
+      span {
+        box-sizing: border-box;
+        flex: 1;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-right: 1px solid var(--main-bg-color);
+        
+        &:nth-child(3) {
+          cursor: pointer;
+          background: var(--red-color);
+        }
+
+        &:nth-child(4) {
+          cursor: pointer;
+          background: var(--green-color);
+          border-right: none;
+        }
+      }
+    }
+  }
+}

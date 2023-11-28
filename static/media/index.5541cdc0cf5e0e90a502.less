@@ -1,0 +1,133 @@
+.addressContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--light-gray-bg);
+  padding: 10px 28px 28px;
+
+  & > span {
+    width: 90%;
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  & > h4 {
+    font-size: 14px;
+    margin: 0 0 18px;
+    font-weight: 300;
+  }
+
+  & > ul {
+    list-style: none;
+    margin-bottom: 20px;
+    li {
+      font-size: 12px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      padding-top: 8px;
+
+      & > span {
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        margin-top: 4px;
+
+        & > a {
+          color: #fff;
+          margin-right: 10px;
+        }
+
+        &:nth-child(2){
+          display: flex;
+          align-items: flex-start;
+
+          & > span {
+            font-size: 12px;
+            background-color: var(--main-bg-color);
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 4px;
+            flex:1;
+            box-sizing: border-box;
+            align-items: center;
+            height: 30px;
+            margin-right: 2px;
+          }
+          & > textarea {
+            flex:1;
+            box-sizing: border-box;
+            height: 60px;
+          }
+        }
+
+        &:nth-child(3){
+          height: 30px;
+          margin-right: 2px;
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 28px;
+
+
+          & > span {
+            font-size: 12px;
+            background-color: var(--main-bg-color);
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 4px;
+            flex:1;
+            box-sizing: border-box;
+            align-items: center;
+            height: 30px;
+            margin-right: 2px;
+          }
+          & > textarea {
+            flex:1;
+            box-sizing: border-box;
+            height: 60px;
+          }
+        }
+
+        & > input {
+          padding-left: 4px;
+          height: 30px;
+          margin-right: 2px;
+        }
+
+      }
+
+    }
+  }
+}
+
+.react-select-container {
+  font-size: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--main-bg-color);
+  border: none;
+  color: var(--text-wite-color);
+  &:last-child {
+    margin-right: 0!important;
+  }
+}
+
+.react-select__value-container {
+  padding: 0!important;
+}
+
+.profileButton {
+  display: flex;
+  justify-content: flex-end;
+
+  &-submit {
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 8px 20px;
+    color: #000;
+    background: var(--text-wite-color);
+  }
+}

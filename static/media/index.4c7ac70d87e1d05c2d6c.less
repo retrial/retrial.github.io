@@ -1,0 +1,54 @@
+.userSideBarContainer {
+  display: flex;
+  flex-direction: column;
+  width: 275px;
+  height: calc(100vh - 45px);
+  box-sizing: border-box;
+  background: var(--light-gray-bg);
+
+  .sideBarNav {
+    padding: 25px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style: none;
+
+    &-item {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 32px;
+
+      &.active {
+        color: var(--text-wite-color);
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        text-decoration: none;
+        width: 100%;
+        padding: 16px 28px;
+        color: var(--text-wite-color);
+        overflow: hidden;
+        white-space: nowrap;
+
+        &.active {
+          color: var(--text-wite-color);
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
+        }
+      }
+
+      i {
+        width: 20px;
+        margin-right: 20px;
+      }
+    }
+  }
+}

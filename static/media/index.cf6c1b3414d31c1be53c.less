@@ -1,0 +1,63 @@
+.Sample {
+  input, button {
+    font: inherit;
+    font-size: 16px;
+
+    &:hover {
+      background: #303D44;
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    & > * {
+      & > * {
+
+      }
+    }
+
+    &__content {
+      display: flex;
+      max-width: 100%;
+      flex-basis: 420px;
+      flex-direction: column;
+      flex-grow: 100;
+      align-items: stretch;
+    }
+  }
+}
+
+.react-daterange-picker__wrapper {
+  border: none;
+  background: var(--light-gray-bg);
+}
+
+.react-calendar {
+  background: #30404d;
+  border: none;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.react-daterange-picker__inputGroup__input {
+  color: white;
+}
+.react-daterange-picker__inputGroup__day {
+  color: white;
+}
+
+.react-daterange-picker__inputGroup {
+  display: flex;
+  justify-content: center;
+}
+.react-daterange-picker__wrapper {
+  svg g {
+    stroke: #fff
+  }
+}
+

@@ -1,0 +1,40 @@
+.reportsTableHeader-wrap {
+  display: flex;
+  padding: 0 0 18px 0;
+  justify-content: space-between;
+
+  & > h4 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .uploadCsv {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+
+    & + label {
+      padding: 0 12px;
+      background: #305E7C;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+  }
+
+}
+
+.datePicker-wrap {
+  display: flex;
+  & > span {
+    margin-right: 100px;
+  }
+}
